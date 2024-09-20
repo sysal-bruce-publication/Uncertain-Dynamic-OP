@@ -1,8 +1,15 @@
 # Uncertain-Dynamic-OP
 
-The Uncertain and Dynamic Orienteering Problem (UDOP) considers real-world edge costs (i.e., dynamic, stochastic, and initially unknown) and their potential impacts on prizes and prize-collection costs. To address UDOP, we develop ADaptive Approach for Probabilistic paThs (ADAPT) is a framework that combines offline planning, execution and online planning. ADAPT dynamically adjusts its estimation for edge costs and performs online re-planning in uncertain environments. More details please check our [paper]():
+The Uncertain and Dynamic Orienteering Problem (UDOP) considers real-world edge costs (i.e., dynamic, stochastic, and initially unknown) and their potential impacts on prizes and prize-collection costs. To address UDOP, we develop ADaptive Approach for Probabilistic paThs (ADAPT) is a framework that combines offline planning, execution and online planning. ADAPT dynamically adjusts its estimation for edge costs and performs online re-planning in uncertain environments. More details please check our [paper](https://arxiv.org/abs/2409.05545):
 ```
-
+@misc{qian2024adaptiveprobabilisticplanninguncertain,
+      title={Adaptive Probabilistic Planning for the Uncertain and Dynamic Orienteering Problem}, 
+      author={Qiuchen Qian and Yanran Wang and David Boyle},
+      year={2024},
+      eprint={2409.05545},
+      archivePrefix={arXiv},
+      primaryClass={eess.SY},
+      url={https://arxiv.org/abs/2409.05545}}
 ```
 
 ## Dataset
