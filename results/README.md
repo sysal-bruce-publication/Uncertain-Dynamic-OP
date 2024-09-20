@@ -1,5 +1,5 @@
 # Results
-All results are shared with Google Drive, use this [link]([https://drive.google.com/file/d/14OQohxkwmLA03E1fTWWYGkQZOptb9oAM/view?usp=drive_link](https://drive.google.com/file/d/14OQohxkwmLA03E1fTWWYGkQZOptb9oAM/view?usp=sharing) to access data.
+All results are shared with Google Drive; please use this [link](https://drive.google.com/file/d/14OQohxkwmLA03E1fTWWYGkQZOptb9oAM/view?usp=sharing) to access data.
 
 In `solution_quality_analysis.7z`, the structure is as follows:
 ```
