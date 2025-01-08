@@ -27,7 +27,7 @@ We demonstrate the effectiveness of ADAPT on the Charging Scheduling Problem (CS
   * `Linker` -> `General` -> `Additional Library Directories` ->  `C:\Program Files\boost\boost_1_82_0\libs`
 
 ## Usage
-After building correctly, users may run the following commands at the root directory of the project:
+After a successful build with the correct names and executable files for all three submodules (see those `.exe` files in `main.sh`), users may run the following commands at the root directory of the project:
 ```
 $ chmod +x main.sh
 $ ./main.sh
