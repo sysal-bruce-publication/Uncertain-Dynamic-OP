@@ -40,7 +40,7 @@ for INSTANCE in "${INSTANCES[@]}"; do
 				echo "[INFO] == ${INSTANCE} == MEAN ${PWR_MEAN} == STD ${PWR_STD} == ${exe_num} =="
 				python scripts/init_env.py -s $SIMULATION_CONFIG_DIR -on $ONLINE_CONFIG_DIR -off $OFFLINE_CONFIG_DIR -i "${INSTANCE_FNAME}" -u $INIT_UAV_CONFIG_DIR -m $MISSION_LOG_DIR -p $REAL_PWR_LOG_DIR --mean "${PWR_MEAN}" --std "${PWR_STD}"
 				cp "${INPUT_DIR}/instance/metadata/${INSTANCE_FNAME}.csv" "${INPUT_DIR}/instance/${INSTANCE_FNAME}.csv"
-				src/offline-planning/x64/Debug/offline-planning.exe $OFFLINE_CONFIG_FILE
+				src/offline-planning/offline.exe $OFFLINE_CONFIG_FILE
 				exe_status=$?
 				if [ $exe_status -ne 0 ]; then
 					echo "[ERROR] Failed to generate offline charging list."
@@ -55,7 +55,7 @@ for INSTANCE in "${INSTANCES[@]}"; do
 				python scripts/change_online_strategy.py -sim $SIMULATION_CONFIG_DIR -stg "Offline"
 				while true; do
 					python scripts/correct_instance_id.py --config $SIMULATION_CONFIG_DIR --id $iter_num
-					src/simulation/x64/Debug/simulation.exe $SIMULATION_CONFIG_FILE 0
+					src/simulation/sim.exe $SIMULATION_CONFIG_FILE 0
 					exe_status=$?
 					if [ $exe_status -ne 0 ]; then
 						break
@@ -89,14 +89,14 @@ for INSTANCE in "${INSTANCES[@]}"; do
 				iter_num=0
 				while true; do
 					python scripts/correct_instance_id.py --config $SIMULATION_CONFIG_DIR --id $iter_num
-					src/simulation/x64/Debug/simulation.exe $SIMULATION_CONFIG_FILE 0
+					src/simulation/sim.exe $SIMULATION_CONFIG_FILE 0
 					exe_status=$?
 					if [ $exe_status -ne 0 ]; then
 						break
 					fi
 					iter_num=$((iter_num+1))
 					python scripts/correct_instance_id.py --config $ONLINE_CONFIG_DIR --id $iter_num
-					src/online-planning/x64/Debug/online-planning.exe $ONLINE_CONFIG_FILE
+					src/online-planning/online.exe $ONLINE_CONFIG_FILE
 					if [ $iter_num -eq $MAX_ITER ]; then
 						echo "[WARN] Out of maximam allowed number of iterations."
 						break
@@ -118,14 +118,14 @@ for INSTANCE in "${INSTANCES[@]}"; do
 				iter_num=0
 				while true; do
 					python scripts/correct_instance_id.py --config $SIMULATION_CONFIG_DIR --id $iter_num
-					src/simulation/x64/Debug/simulation.exe $SIMULATION_CONFIG_FILE 0
+					src/simulation/sim.exe $SIMULATION_CONFIG_FILE 0
 					exe_status=$?
 					if [ $exe_status -ne 0 ]; then
 						break
 					fi
 					iter_num=$((iter_num+1))
 					python scripts/correct_instance_id.py --config $ONLINE_CONFIG_DIR --id $iter_num
-					src/online-planning/x64/Debug/online-planning.exe $ONLINE_CONFIG_FILE
+					src/online-planning/online.exe $ONLINE_CONFIG_FILE
 					if [ $iter_num -eq $MAX_ITER ]; then
 						echo "[WARN] Out of maximam allowed number of iterations."
 						break
@@ -148,7 +148,7 @@ for INSTANCE in "${INSTANCES[@]}"; do
 				iter_num=0
 				while true; do
 					python scripts/correct_instance_id.py --config $SIMULATION_CONFIG_DIR --id $iter_num
-					src/simulation/x64/Debug/simulation.exe $SIMULATION_CONFIG_FILE 0
+					src/simulation/sim.exe $SIMULATION_CONFIG_FILE 0
 					exe_status=$?
 					if [ $exe_status -ne 0 ]; then
 						break
@@ -156,7 +156,7 @@ for INSTANCE in "${INSTANCES[@]}"; do
 					python scripts/window_sliding_power.py --config $SIMULATION_CONFIG_DIR --duration $TIME_WINDOW
 					iter_num=$((iter_num+1))
 					python scripts/correct_instance_id.py --config $ONLINE_CONFIG_DIR --id $iter_num
-					src/online-planning/x64/Debug/online-planning.exe $ONLINE_CONFIG_FILE
+					src/online-planning/online.exe $ONLINE_CONFIG_FILE
 					if [ $iter_num -eq $MAX_ITER ]; then
 						echo "[WARN] Out of maximam allowed number of iterations."
 						break
