@@ -1,0 +1,34 @@
+{
+    "instance": {
+        "mission_log_fname": "mission_log",
+        "power_log_fname": "avg_power_log",
+        "sensor_fname": "california20_0",
+        "chrg_fname": "exp_chrg_list",
+        "edge_fname": "real_edge_costs"
+    },
+    "print_config": false,
+    "print_result": false,
+    "set_timer": false,
+    "simulation": {
+        "simu_dt": 1,
+        "sample_dt": 20,
+        "eta_ipt": 0.4,
+        "eta_chrg": 0.9,
+        "uniform": {
+            "real_engy_lb": 0.97,
+            "real_engy_ub": 1.03
+        },
+        "normal": {
+            "mean_offset": 90,
+            "std_offset": 90,
+            "takeoff_mean": 521.773552379442,
+            "takeoff_std": 23.67814963897892,
+            "cruise_mean": 451.6182557082532,
+            "cruise_std": 18.514621925518707,
+            "landing_mean": 431.0998879991306,
+            "landing_std": 15.574130315845531
+        },
+        "log_power": true,
+        "use_avg_power": false
+    }
+}

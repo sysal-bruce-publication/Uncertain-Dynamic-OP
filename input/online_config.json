@@ -1,0 +1,53 @@
+{
+    "ACS": {
+        "num_ants": 40,
+        "max_no_impr_acs": 25,
+        "num_iters_acs": 250,
+        "num_iters_2opt": 100,
+        "q0": 0.9,
+        "rho": 0.1,
+        "alpha": 0.1,
+        "beta": 2.0,
+        "tol": 0.0001
+    },
+    "instance": {
+        "sensor_fname": "california20_1",
+        "chrg_fname": "exp_chrg_list",
+        "mission_log_fname": "mission_log",
+        "power_log_fname": "avg_power_log",
+        "edge_fname": "offline_edge_costs",
+        "save_edge_file": false
+    },
+    "online": {
+        "strategy": {
+            "name": "MCGreedy",
+            "WeightedAvg": {
+                "act_weight": 0.5,
+                "exp_weight": 0.5
+            },
+            "MCGreedy": {
+                "num_samples": 11
+            },
+            "Bayesian": {
+                "alpha0": 2,
+                "kappa0": 1,
+                "belief_weight": 0.5,
+                "cdf_probs": [
+                    0.75,
+                    0.775,
+                    0.8,
+                    0.825,
+                    0.85,
+                    0.875,
+                    0.9,
+                    0.925,
+                    0.95,
+                    0.975,
+                    0.999
+                ]
+            }
+        }
+    },
+    "print_config": false,
+    "print_result": false
+}

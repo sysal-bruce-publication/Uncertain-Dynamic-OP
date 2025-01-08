@@ -1,0 +1,162 @@
+{
+    "config0": {
+        "mean_offset": 90,
+        "std_offset": 90,
+        "takeoff_mean": 521.773552379442,
+        "takeoff_std": 23.67814963897892,
+        "cruise_mean": 451.6182557082532,
+        "cruise_std": 18.514621925518707,
+        "landing_mean": 431.0998879991306,
+        "landing_std": 15.574130315845531
+    },
+    "config1": {
+        "mean_offset": 90,
+        "std_offset": 100,
+        "takeoff_mean": 521.773552379442,
+        "takeoff_std": 26.30905515442102,
+        "cruise_mean": 451.6182557082532,
+        "cruise_std": 20.57180213946523,
+        "landing_mean": 431.0998879991306,
+        "landing_std": 17.304589239828367
+    },
+    "config2": {
+        "mean_offset": 90,
+        "std_offset": 110,
+        "takeoff_mean": 521.773552379442,
+        "takeoff_std": 28.939960669863126,
+        "cruise_mean": 451.6182557082532,
+        "cruise_std": 22.628982353411754,
+        "landing_mean": 431.0998879991306,
+        "landing_std": 19.035048163811204
+    },
+    "config3": {
+        "mean_offset": 90,
+        "std_offset": 120,
+        "takeoff_mean": 521.773552379442,
+        "takeoff_std": 31.570866185305224,
+        "cruise_mean": 451.6182557082532,
+        "cruise_std": 24.686162567358277,
+        "landing_mean": 431.0998879991306,
+        "landing_std": 20.765507087794038
+    },
+    "config4": {
+        "mean_offset": 100,
+        "std_offset": 90,
+        "takeoff_mean": 579.7483915327133,
+        "takeoff_std": 23.67814963897892,
+        "cruise_mean": 501.7980618980591,
+        "cruise_std": 18.514621925518707,
+        "landing_mean": 478.99987555458955,
+        "landing_std": 15.574130315845531
+    },
+    "config5": {
+        "mean_offset": 100,
+        "std_offset": 100,
+        "takeoff_mean": 579.7483915327133,
+        "takeoff_std": 26.30905515442102,
+        "cruise_mean": 501.7980618980591,
+        "cruise_std": 20.57180213946523,
+        "landing_mean": 478.99987555458955,
+        "landing_std": 17.304589239828367
+    },
+    "config6": {
+        "mean_offset": 100,
+        "std_offset": 110,
+        "takeoff_mean": 579.7483915327133,
+        "takeoff_std": 28.939960669863126,
+        "cruise_mean": 501.7980618980591,
+        "cruise_std": 22.628982353411754,
+        "landing_mean": 478.99987555458955,
+        "landing_std": 19.035048163811204
+    },
+    "config7": {
+        "mean_offset": 100,
+        "std_offset": 120,
+        "takeoff_mean": 579.7483915327133,
+        "takeoff_std": 31.570866185305224,
+        "cruise_mean": 501.7980618980591,
+        "cruise_std": 24.686162567358277,
+        "landing_mean": 478.99987555458955,
+        "landing_std": 20.765507087794038
+    },
+    "config8": {
+        "mean_offset": 110,
+        "std_offset": 90,
+        "takeoff_mean": 637.7232306859847,
+        "takeoff_std": 23.67814963897892,
+        "cruise_mean": 551.977868087865,
+        "cruise_std": 18.514621925518707,
+        "landing_mean": 526.8998631100485,
+        "landing_std": 15.574130315845531
+    },
+    "config9": {
+        "mean_offset": 110,
+        "std_offset": 100,
+        "takeoff_mean": 637.7232306859847,
+        "takeoff_std": 26.30905515442102,
+        "cruise_mean": 551.977868087865,
+        "cruise_std": 20.57180213946523,
+        "landing_mean": 526.8998631100485,
+        "landing_std": 17.304589239828367
+    },
+    "config10": {
+        "mean_offset": 110,
+        "std_offset": 110,
+        "takeoff_mean": 637.7232306859847,
+        "takeoff_std": 28.939960669863126,
+        "cruise_mean": 551.977868087865,
+        "cruise_std": 22.628982353411754,
+        "landing_mean": 526.8998631100485,
+        "landing_std": 19.035048163811204
+    },
+    "config11": {
+        "mean_offset": 110,
+        "std_offset": 120,
+        "takeoff_mean": 637.7232306859847,
+        "takeoff_std": 31.570866185305224,
+        "cruise_mean": 551.977868087865,
+        "cruise_std": 24.686162567358277,
+        "landing_mean": 526.8998631100485,
+        "landing_std": 20.765507087794038
+    },
+    "config12": {
+        "mean_offset": 120,
+        "std_offset": 90,
+        "takeoff_mean": 695.6980698392559,
+        "takeoff_std": 23.67814963897892,
+        "cruise_mean": 602.1576742776708,
+        "cruise_std": 18.514621925518707,
+        "landing_mean": 574.7998506655074,
+        "landing_std": 15.574130315845531
+    },
+    "config13": {
+        "mean_offset": 120,
+        "std_offset": 100,
+        "takeoff_mean": 695.6980698392559,
+        "takeoff_std": 26.30905515442102,
+        "cruise_mean": 602.1576742776708,
+        "cruise_std": 20.57180213946523,
+        "landing_mean": 574.7998506655074,
+        "landing_std": 17.304589239828367
+    },
+    "config14": {
+        "mean_offset": 120,
+        "std_offset": 110,
+        "takeoff_mean": 695.6980698392559,
+        "takeoff_std": 28.939960669863126,
+        "cruise_mean": 602.1576742776708,
+        "cruise_std": 22.628982353411754,
+        "landing_mean": 574.7998506655074,
+        "landing_std": 19.035048163811204
+    },
+    "config15": {
+        "mean_offset": 120,
+        "std_offset": 120,
+        "takeoff_mean": 695.6980698392559,
+        "takeoff_std": 31.570866185305224,
+        "cruise_mean": 602.1576742776708,
+        "cruise_std": 24.686162567358277,
+        "landing_mean": 574.7998506655074,
+        "landing_std": 20.765507087794038
+    }
+}

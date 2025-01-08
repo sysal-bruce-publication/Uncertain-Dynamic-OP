@@ -1,0 +1,24 @@
+{
+    "ACS": {
+        "num_ants": 40,
+        "max_no_impr_acs": 250,
+        "num_iters_acs": 500,
+        "num_iters_2opt": 150,
+        "q0": 0.9,
+        "rho": 0.1,
+        "alpha": 0.1,
+        "beta": 2.0,
+        "tol": 0.01
+    },
+    "instance": {
+        "sensor_fname": "california20_0",
+        "chrg_fname": "exp_chrg_list",
+        "edge_fname": "offline_edge_costs",
+        "mission_log_fname": "mission_log",
+        "power_log_fname": "avg_power_log"
+    },
+    "print_config": false,
+    "print_result": false,
+    "save_est_sensors": true,
+    "uav_power_dt": 1
+}
